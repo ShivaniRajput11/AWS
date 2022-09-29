@@ -1,0 +1,4 @@
+[ZoneTransfer]
+ZoneId=3
+ReferrerUrl=https://amazon-braket-pennylane-mkpi.notebook.us-east-1.sagemaker.aws/notebooks/Pennylane_oiplabs.ipynb
+HostUrl=https://amazon-braket-pennylane-mkpi.notebook.us-east-1.sagemaker.aws/nbconvert/notebook/Pennylane_oiplabs.ipynb?download=true
