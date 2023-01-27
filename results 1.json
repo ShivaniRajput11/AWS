@@ -1,0 +1,76 @@
+{
+    "braketSchemaHeader": {
+        "name": "braket.task_result.gate_model_task_result",
+        "version": "1"
+    },
+    "resultTypes": [
+        {
+            "type": {
+                "parameters": [
+                    "p_0",
+                    "p_1"
+                ],
+                "observable": "1 * z",
+                "targets": [
+                    [
+                        1
+                    ]
+                ],
+                "type": "adjoint_gradient"
+            },
+            "value": {
+                "expectation": -1.0,
+                "gradient": {
+                    "p_0": 5.988996552010025e-09,
+                    "p_1": -1.01762923757702e-08
+                }
+            }
+        }
+    ],
+    "taskMetadata": {
+        "braketSchemaHeader": {
+            "name": "braket.task_result.task_metadata",
+            "version": "1"
+        },
+        "id": "arn:aws:braket:us-west-1:197621282928:quantum-task/fc5f0eca-09f6-4827-99d2-625c18e1ccfc",
+        "shots": 0,
+        "deviceId": "arn:aws:braket:::device/quantum-simulator/amazon/sv1",
+        "deviceParameters": {
+            "braketSchemaHeader": {
+                "name": "braket.device_schema.simulators.gate_model_simulator_device_parameters",
+                "version": "1"
+            },
+            "paradigmParameters": {
+                "braketSchemaHeader": {
+                    "name": "braket.device_schema.gate_model_parameters",
+                    "version": "1"
+                },
+                "qubitCount": 2,
+                "disableQubitRewiring": false
+            }
+        },
+        "createdAt": "2023-01-27T17:15:19.788Z",
+        "endedAt": "2023-01-27T17:15:21.255Z",
+        "status": "COMPLETED"
+    },
+    "additionalMetadata": {
+        "action": {
+            "braketSchemaHeader": {
+                "name": "braket.ir.openqasm.program",
+                "version": "1"
+            },
+            "inputs": {
+                "p_0": 5.988996552010025e-09,
+                "p_1": 3.141592643413501
+            },
+            "source": "OPENQASM 3.0;\ninput float p_1;\ninput float p_0;\nqubit[2] q;\nrx(p_0) q[0];\nry(p_1) q[1];\ncnot q[0], q[1];\n#pragma braket result adjoint_gradient expectation(z(q[1])) p_0, p_1"
+        },
+        "simulatorMetadata": {
+            "braketSchemaHeader": {
+                "name": "braket.task_result.simulator_metadata",
+                "version": "1"
+            },
+            "executionDuration": 5
+        }
+    }
+}
